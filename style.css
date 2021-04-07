@@ -1,0 +1,146 @@
+/* Universal Reset */
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    background-color: rgb(204, 201, 201);
+}
+
+/* Roboto and handwriting fonts - 
+font-family: 'Roboto', sans-serif;
+
+font-family: 'Courgette', cursive; - maybe
+font-family: 'Kalam', cursive; - maybe
+font-family: 'Sacramento', cursive; - maybe
+*/
+
+/* layout and element styling */
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.2fr 1.5fr 1.2fr 0.8fr;
+    grid-template-areas: 
+    "header header nav nav"
+    "main main main main"
+    "content1 content2 content3 content4"
+    "content5 content5 content6 content6"
+    "signup signup signup signup"
+    "about about contact contact"
+    "footer footer footer footer";
+}
+
+.header {
+    background-color: rgb(204, 201, 201);
+    grid-area: header;
+    padding: 5%;
+    font-family: 'Sacramento', cursive;
+    font-size: 300%;
+}
+
+.nav {
+    background-color: rgb(204, 201, 201);
+    grid-area: nav;
+    padding: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    .nav a {
+        padding: 2%;
+        text-emphasis: none;
+        text-decoration: none;
+        color: black;
+        border-top: 1px solid black;
+    }
+        .nav a:hover {
+            border-top: 1px solid black;
+            color: teal;
+        }
+
+.main {
+    background-color: rgb(231, 229, 229);
+    grid-area: main;
+    padding: 20%;
+}
+
+/* offerings (3 options) */
+
+.content1 {
+    background-color: rgb(204, 201, 201);
+    grid-area: content1;
+    padding: 10%;
+}
+
+.content2 {
+    background-color: rgb(231, 229, 229);
+    grid-area: content2;
+    padding: 10%;
+}
+
+.content3 {
+    background-color: rgb(204, 201, 201);
+    grid-area: content3;
+    padding: 10%;
+}
+
+/* Reviews (3 ratings) */
+
+.content4 {
+    background-color: rgb(231, 229, 229);
+    grid-area: content4;
+    padding: 10%;
+}
+
+.content5 {
+    background-color: rgb(204, 201, 201);
+    grid-area: content5;
+    padding: 10%;
+}
+
+.content6 {
+    background-color: rgb(231, 229, 229);
+    grid-area: content6;
+    padding: 10%;
+}
+
+/* signup */ 
+
+.signup {
+    background-color: rgb(204, 201, 201);
+    grid-area: signup;
+    padding: 10%;
+}
+
+/* about */
+
+.about {
+    background-color: rgb(231, 229, 229);
+    grid-area: about;
+    padding: 18%;
+}
+
+/* contact */
+
+.contact {
+    background-color: rgb(231, 229, 229);
+    grid-area: contact;
+    padding: 18%;
+}
+
+/* social links, footer, and back to top button? */
+
+.footer {
+    background-color: rgb(204, 201, 201);
+    grid-area: footer;
+    padding: 5%;
+}
+
+/* utility classes */
+
+.margin-1t {
+    margin-top: 5%;
+}
+
+/* @media queries */
