@@ -4,7 +4,8 @@ body {
     margin: 0;
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
-    background-color: rgb(204, 201, 201);
+    background-color: rgb(247, 247, 247);
+    color: rgb(34, 34, 34);
 }
 
 /* Roboto and handwriting fonts - 
@@ -19,33 +20,33 @@ font-family: 'Sacramento', cursive; - maybe
 
 .container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 0.2fr 1.5fr 1.2fr 0.8fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.2fr 1.5fr 0.5fr 0.8fr;
     grid-template-areas: 
-    "header header nav nav"
-    "main main main main"
-    "content1 content2 content3 content4"
-    "content5 content5 content6 content6"
-    "signup signup signup signup"
-    "about about contact contact"
-    "footer footer footer footer";
-}
-
-.header {
-    background-color: rgb(204, 201, 201);
-    grid-area: header;
-    padding: 5%;
-    font-family: 'Sacramento', cursive;
-    font-size: 300%;
+    "nav nav nav"
+    "main main main"
+    "content0 content0 content0"
+    "content1 content2 content3"
+    "content4 content4 content5 content5"
+    "content6 content6 content7 content7"
+    "signup signup signup"
+    "about about about" 
+    "contact contact contact"
+    "footer footer footer";
 }
 
 .nav {
-    background-color: rgb(204, 201, 201);
+    background-color: rgba(208, 210, 211, 0.863); /* rgb(223, 221, 221);*/
     grid-area: nav;
-    padding: 5%;
+    padding: 1%;
     display: flex;
     justify-content: center;
     align-items: center;
+    border-bottom: 1px solid rgb(255, 201, 185);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 10vh;
 }
     .nav a {
         padding: 2%;
@@ -55,92 +56,140 @@ font-family: 'Sacramento', cursive; - maybe
         border-top: 1px solid black;
     }
         .nav a:hover {
-            border-top: 1px solid black;
-            color: teal;
+            color: rgb(190, 58, 65);
+        }
+
+        .header {
+            text-align: left;
+            padding: 1%;
+            font-family: 'Sacramento', cursive;
+            font-size: 300%;
+            display: flex;
+            justify-content: left;
+            align-items: left;
+            padding-left: 0;
         }
 
 .main {
     background-color: rgb(231, 229, 229);
     grid-area: main;
-    padding: 20%;
+    padding: 22%;
+    background-image: url('images/brooke-lark.jpg');
+    height: auto;
+    width: auto;
+    background-position: center;
+}
+.hero {
+    color: black;
+    font-size: 200%;
+    /*font-weight: lighter;*/
+    text-align: right;
 }
 
+/* compelling paragraph section */
+.content0 {
+    background-color: rgb(204, 201, 201);
+    grid-area: content0;
+    padding: 5%;
+}
 /* offerings (3 options) */
 
 .content1 {
     background-color: rgb(204, 201, 201);
-    grid-area: content1;
+   
     padding: 10%;
 }
 
 .content2 {
-    background-color: rgb(231, 229, 229);
-    grid-area: content2;
+    background-color: rgb(204, 201, 201);
     padding: 10%;
 }
 
 .content3 {
     background-color: rgb(204, 201, 201);
-    grid-area: content3;
-    padding: 10%;
-}
-
-/* Reviews (3 ratings) */
-
-.content4 {
-    background-color: rgb(231, 229, 229);
-    grid-area: content4;
-    padding: 10%;
-}
-
-.content5 {
-    background-color: rgb(204, 201, 201);
-    grid-area: content5;
-    padding: 10%;
-}
-
-.content6 {
-    background-color: rgb(231, 229, 229);
-    grid-area: content6;
+  
     padding: 10%;
 }
 
 /* signup */ 
 
 .signup {
-    background-color: rgb(204, 201, 201);
     grid-area: signup;
     padding: 10%;
 }
 
+/* reviews */
+
+.content4 { grid-area: content4;}
+.content5 { grid-area: content5;}
+.content6 { grid-area: content6;}
+.content7 { grid-area: content7;}
+
 /* about */
 
 .about {
-    background-color: rgb(231, 229, 229);
     grid-area: about;
-    padding: 18%;
+    padding: 10%;
 }
 
 /* contact */
 
 .contact {
-    background-color: rgb(231, 229, 229);
+    background-color: rgb(235, 235, 235);
     grid-area: contact;
-    padding: 18%;
+    padding: 10%;
 }
 
 /* social links, footer, and back to top button? */
 
 .footer {
-    background-color: rgb(204, 201, 201);
     grid-area: footer;
     padding: 5%;
+    font-size: 150%;
 }
 
 /* utility classes */
 
-.margin-1t {
-    margin-top: 5%;
+.right {text-align: right;}
+.center {text-align: center;}
+.left {text-align: left;}
+
+.bg-light {
+    color: rgb(34, 34, 34);
+    background-color: rgb(233, 232, 232);
+}
+.bg-light h2 {
+    font-weight: lighter;
+    text-align: center;
+    font-size: 200%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    border-top: 1px solid rgb(2, 196, 196);
+    border-bottom: 1px solid rgb(2, 196, 196);
+}
+
+.bg-green {
+    background-color: rgba(2, 46, 13, 0.63);
+    color: rgb(229, 226, 226);
+}
+
+section {
+    column-count: 3;
+    column-gap: 5px;
+    padding: 0 2% 2% 2%;
+}
+section h2 {
+    font-weight: lighter;
+}
+.review1 {
+    column-count: 1;
+    padding: 5%;
+    background-color: rgb(204, 201, 201);
+}
+.review2 {
+    column-count: 1;
+    padding: 5%;
+    background-color: rgb(204, 201, 201);
 }
 
 /* @media queries */
