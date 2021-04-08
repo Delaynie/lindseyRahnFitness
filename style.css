@@ -1,20 +1,17 @@
 /* Universal Reset */
-body {
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Open Sans', sans-serif;
-    background-color: rgb(247, 247, 247);
-    color: rgb(34, 34, 34);
+    overflow-x: hidden;
 }
 
-/* Roboto and handwriting fonts - 
-font-family: 'Roboto', sans-serif;
-
-font-family: 'Courgette', cursive; - maybe
-font-family: 'Kalam', cursive; - maybe
-font-family: 'Sacramento', cursive; - maybe
-*/
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: rgb(247, 247, 247);
+    background-image: linear-gradient(rgb(247, 247, 247), rgb(226, 227, 230));
+    color: rgb(34, 34, 34);
+}
 
 /* layout and element styling */
 
@@ -120,10 +117,12 @@ font-family: 'Sacramento', cursive; - maybe
 
 /* reviews */
 
-.content4 { grid-area: content4;}
-.content5 { grid-area: content5;}
-.content6 { grid-area: content6;}
-.content7 { grid-area: content7;}
+.reviews {
+    padding: 5%;
+}
+.reviewScripts {
+    padding: 5%;
+}
 
 /* about */
 
@@ -135,7 +134,6 @@ font-family: 'Sacramento', cursive; - maybe
 /* contact */
 
 .contact {
-    background-color: rgb(235, 235, 235);
     grid-area: contact;
     padding: 10%;
 }
@@ -145,7 +143,9 @@ font-family: 'Sacramento', cursive; - maybe
 .footer {
     grid-area: footer;
     padding: 5%;
-    font-size: 150%;
+    font-size: 100%;
+    color: rgb(232, 234, 235);
+    background-color: rgb(47, 93, 107);
 }
 
 /* utility classes */
@@ -156,7 +156,7 @@ font-family: 'Sacramento', cursive; - maybe
 
 .bg-light {
     color: rgb(34, 34, 34);
-    background-color: rgb(233, 232, 232);
+    background-color: rgb(232, 233, 233);
 }
 .bg-light h2 {
     font-weight: lighter;
@@ -164,32 +164,41 @@ font-family: 'Sacramento', cursive; - maybe
     font-size: 200%;
     padding-top: 5%;
     padding-bottom: 5%;
-    border-top: 1px solid rgb(2, 196, 196);
-    border-bottom: 1px solid rgb(2, 196, 196);
+    border-top: 1px solid rgb(24, 43, 24);
+    border-bottom: 1px solid rgb(24, 43, 24);
 }
 
-.bg-green {
-    background-color: rgba(2, 46, 13, 0.63);
+.bg-blue {
+    background-color: rgba(22, 81, 121, 0.63);
     color: rgb(229, 226, 226);
 }
 
-section {
+.section {
     column-count: 3;
     column-gap: 5px;
     padding: 0 2% 2% 2%;
 }
-section h2 {
+
+.section h2 {
     font-weight: lighter;
 }
-.review1 {
-    column-count: 1;
-    padding: 5%;
-    background-color: rgb(204, 201, 201);
-}
-.review2 {
-    column-count: 1;
-    padding: 5%;
-    background-color: rgb(204, 201, 201);
-}
+.flex-flip:nth-child(2n){  flex-direction: row-reverse; }
+
+/* review css */
+.bg-image {
+    background-size: cover;
+    background-position: center;
+    max-width: 50%;
+    padding: 20%;
+  }
+  
+  .bg-fitness {
+    background-image:url('/images/miguel-bruna.jpg');
+    background-position: bottom;
+  }
+  
+  .bg-nutrition {
+    background-image:url('/images/brooke-lark.jpg');
+  }
 
 /* @media queries */

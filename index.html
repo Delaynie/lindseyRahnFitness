@@ -19,6 +19,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="main.js"></script>
 
+    <!-- gridlex link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css">
+    
     <!-- This is the custom stylesheet -->
     <link href="style.css" rel="stylesheet">
 
@@ -52,7 +55,7 @@
             <h2>Compelling Header Here</h2>
         </div>
 
-    <section>
+    <section class="section">
         <div id="memberships" class="content1">
             <h2>A la carte</h2>
             <p>Lorem ipsum, doloremque cumque magni velit error nesciunt adipisci odit officiis aspernatur.</p>
@@ -68,7 +71,7 @@
     </section>
 
     <!-- Sign up now -->
-    <div id="signup" class="signup bg-green center">Sign Up</div>
+    <div id="signup" class="signup bg-blue center">Sign Up</div>
 
 
         <!-- Social Proof -->
@@ -77,18 +80,27 @@
             <h2>Happy Members</h2>
         </div>
 
-    <section class="review1 right">
-        <div class="content4">
-            <h2>Review Of Fitness</h2>
-            <p>Picture of someone doing fitness to the side set at 50% width</p>
+    <!-- Review Section -->
+    <Section class="grid reviews">
+              <div class="col-6_sm-12 bg-image bg-fitness flex-flip">
+              </div>
+              <div class="col-6_sm-12 reviewScripts">
+            <h3> This this a heading </h3><br>
+            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+            <br>
+            <p> - Jenny B. from San Antonio, TX</p>        
+            </div>
+    <div class="grid reviews">
+          <!--<div class="bg-image bg-adventure"> </div>-->
+          <div class="col-6_sm-12 reviewScripts flex-flip">
+            <h3> This this a heading </h3><br>
+            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+            <br>
+            <p> - Leslie S. from Austin, TX</p> 
         </div>
-    </section>
-
-    <section class="review2 left">
-        <div class="content6">
-            <h2>Review of Nutrition</h2>
-            <p>Picture of nutritious food to the side. Set at 50% width</p>
+          <div class="col-6_sm-12 bg-image bg-nutrition">
         </div>
+        
     </section>
 
         <!-- about -->
@@ -97,7 +109,7 @@
         <!-- Contact -->
         <div id="contact" class="contact right">Contact</div>
 
-        <footer class="footer bg-green center">Footer</footer>
+        <footer class="footer center">Designed by RadFox</footer>
 
     </div>
 
