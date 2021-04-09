@@ -118,10 +118,10 @@ body {
 /* reviews */
 
 .reviews {
-    padding: 1%;
+    padding: 5%;
 }
 .reviewScripts {
-    padding: 1%;
+    padding: 5%;
 }
 
 /* about */
@@ -189,7 +189,8 @@ body {
     background-size: cover;
     background-position: center;
     max-width: 50%;
-    padding: 20%;
+    padding: 15%;
+    border-radius: 5px;
   }
   
   .bg-fitness {
@@ -198,7 +199,7 @@ body {
   }
   
   .bg-nutrition {
-    background-image:url('/images/brooke-lark.jpg');
+    background-image:url('/images/roksolana-zasiadko.jpg');
   }
 
   input {
