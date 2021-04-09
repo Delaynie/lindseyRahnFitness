@@ -71,34 +71,47 @@
     </section>
 
     <!-- Sign up now -->
-    <div id="signup" class="signup bg-blue center">Sign Up</div>
+    <section id="signup" class="signup bg-blue center">
+        <h2> Sign Up Now </h2>
+        <p>Fill out the form and I'll send you details on</p>  
+        <form class="email-signup" action="https://formspree.io/your@email.com" method="POST">
+          <input type="text" name="name" placeholder="Your Name">
+          <input type="email" name="_replyto" placeholder="Your Email">
+          <input type="text" name="message" placeholder="Optional Message">
+          <input type="submit" value="Send" class="button-solid">
+        </form>
+      
+      </section>
 
 
         <!-- Social Proof -->
 
         <div class="bg-light">
-            <h2>Happy Members</h2>
+            <h2>Don't Just Take My Word On It</h2>
         </div>
 
     <!-- Review Section -->
     <Section class="grid reviews">
-              <div class="col-6_sm-12 bg-image bg-fitness flex-flip">
+        
+              <div class="col-6 bg-image bg-fitness">
               </div>
-              <div class="col-6_sm-12 reviewScripts">
+              <div class="col-6 reviewScripts">
             <h3> This this a heading </h3><br>
             <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
             <br>
             <p> - Jenny B. from San Antonio, TX</p>        
             </div>
-    <div class="grid reviews">
-          <!--<div class="bg-image bg-adventure"> </div>-->
-          <div class="col-6_sm-12 reviewScripts flex-flip">
+            
+    </Section>
+    <section class="grid reviews">
+          
+          <div class="col-6 reviewScripts">
             <h3> This this a heading </h3><br>
             <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
             <br>
             <p> - Leslie S. from Austin, TX</p> 
         </div>
-          <div class="col-6_sm-12 bg-image bg-nutrition">
+          <div class="col-6 bg-image bg-nutrition">
         </div>
         
     </section>
