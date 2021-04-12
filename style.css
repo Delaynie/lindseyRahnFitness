@@ -126,7 +126,7 @@ body {
 
 .about {
     grid-area: about;
-    padding: 20%;
+    padding: 10%;
 }
 
 /* contact */
@@ -144,16 +144,16 @@ body {
     font-size: 100%;
     color: rgb(232, 234, 235);
     background-color: rgb(47, 93, 107);
+    border-top: 2px solid rgb(24, 43, 24);
 }
 
-footer a {
+.inline a {
     padding: 2%;
     text-emphasis: none;
     text-decoration: none;
-    color: inherit;
-    border-top: 2px solid hotpink;
+    color: rgb(245, 199, 214);
 }
-    footer a:hover {
+    .inline a:hover {
         color: white;
     }
 /* utility classes */
@@ -208,6 +208,11 @@ footer a {
   
   .bg-nutrition {
     background-image:url('/images/roksolana-zasiadko.jpg');
+  }
+
+  .bg-about {
+    background-image: url('images/heather-ford.jpg');
+      background-position: center;
   }
 
   input, textarea {
