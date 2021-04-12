@@ -55,35 +55,35 @@
 
         <!-- Compelling message to interest potential clients -->
         <div class="content0 bg-light margin-b">
-            <h1>Fascinating Title</h1>
-            <p>Compelling paragraph. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit ullam, voluptate asperiores consectetur minus optio corporis! Quisquam aliquam cum necessitatibus. Et maxime est recusandae perspiciatis rerum ex dolorem dignissimos itaque!</p>
+            <h1 class="aos">Fascinating Title</h1>
+            <p class="aos">Compelling paragraph. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit ullam, voluptate asperiores consectetur minus optio corporis! Quisquam aliquam cum necessitatibus. Et maxime est recusandae perspiciatis rerum ex dolorem dignissimos itaque!</p>
         </div>
         
         <!-- Offerings -->
-        <div class="bg-light margin-b">
+        <div id="memberships" class="bg-light margin-b">
             <h2>Let's Make Your Health Easy For You</h2>
         </div>
 
-    <section class="section">
-        <div id="memberships" class="content1">
+    <section class="grid margin-t margin-b">
+        <div class="col-4_sm-12 content1 mobile-center aos">
             <h2>A la carte</h2>
             <p>Lorem ipsum, doloremque cumque magni velit error nesciunt adipisci odit officiis aspernatur.</p>
         </div>
-        <div class="content2 center">
+        <div class="col-4_sm-12 content2 center aos">
             <h2>Membership</h2>
             <p>Lorem ipsum, doloremque cumque magni velit error nesciunt adipisci odit officiis aspernatur.</p>
         </div>
-        <div class="content3 right">
+        <div class="col-4_sm-12 content3 right mobile-center aos">
             <h2>Nutrition 1 on 1</h2>
             <p>Lorem ipsum, doloremque cumque magni velit error nesciunt adipisci odit officiis aspernatur.</p>
         </div>
     </section>
 
     <!-- Sign up now -->
-    <section id="signup" class="signup bg-blue center margin-b">
-        <h2> Sign Up Now </h2>
-        <p>Fill out the form and I'll send you details on</p>  
-        <form class="email-signup" action="https://formspree.io/your@email.com" method="POST">
+    <section id="signup" class="signup bg-blue center margin-b aos">
+        <h2 class="aos"> Sign Up Now </h2>
+        <p class="aos">Lorem ipsum dolor sit amet consectetur, minima tempora temporibus odio, cupiditate blanditiis aut aliquam deleniti ducimus exercitationem, voluptate odit.</p>  
+        <form class="email-signup aos" action="https://formspree.io/your@email.com" method="POST">
           <input type="text" name="name" placeholder="Your Name">
           <input type="email" name="_replyto" placeholder="Your Email">
           <input type="text" name="message" placeholder="Optional Message">
@@ -100,7 +100,7 @@
         </div>
 
     <!-- Review Section -->
-    <Section class="grid reviews">
+    <Section class="grid reviews aos">
               <div class="col-6_sm-12 bg-image bg-fitness">
               </div>
               <div class="col-6_sm-12 reviewScripts">
@@ -110,7 +110,7 @@
                 <p> - Jenny B. from San Antonio, TX</p>        
               </div>
     </Section>
-    <section class="grid reviews">
+    <section class="grid reviews aos">
           <div class="col-6_sm-12 bg-image bg-nutrition">
           </div>
           <div class="col-6_sm-12 reviewScripts">
@@ -123,13 +123,13 @@
 
     <!-- Contact -->
     <section id="contact" class="grid contact bg-blue">
-      <div class="col-6_sm-12 padded">
+      <div class="col-6_sm-12 aos">
         <h2> Get In Touch Directly</h2>
         <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
         <p> <strong> Email: </strong> hello@lindseyrahnfitness.com </p>
         <p> <strong> Facebook: </strong> fb.com/businesspage </p>
       </div>
-      <div class="col-6_sm-12-middle padded">
+      <div class="col-6_sm-12-middle padded aos">
         <form class="grid-center" action="https://formspree.io/hello@company.com" method="POST">
           <div class="col-6_sm-12">
             <input type="text" name="name" placeholder="Your Name">
@@ -146,9 +146,9 @@
     </section>
 
         <!-- about -->
-      <section class="grid">
+      <section id="about" class="grid aos">
         <div class="col-6_sm-12 bg-image bg-about"></div>
-        <div id="about" class="col-6_sm-12 about">
+        <div class="col-6_sm-12 about">
           <h2>About Lindsey Rahn Fitness</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae amet quis ducimus similique, eaque soluta! Aspernatur repellat natus repudiandae placeat commodi mollitia eos porro, libero nostrum beatae inventore laboriosam assumenda?</p>
       </div>
@@ -183,5 +183,7 @@
               </nav>
             </div>
     </div>
+
+    <script src="scroll.js"></script>
 </body>
 </html>

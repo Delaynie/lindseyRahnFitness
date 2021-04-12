@@ -41,6 +41,7 @@ body {
     top: 0;
     width: 100%;
     height: 10vh;
+    z-index: 2;
 }
     .nav a {
         padding: 2%;
@@ -85,24 +86,26 @@ body {
     background-color: rgb(204, 201, 201);
     grid-area: content0;
     padding: 5%;
+    margin-top: 3%
 }
 /* offerings (3 options) */
 
 .content1 {
     background-color: rgb(204, 201, 201);
-   
-    padding: 10%;
+    padding: 5%;
+    display: inline-block;
 }
 
 .content2 {
     background-color: rgb(204, 201, 201);
-    padding: 10%;
+    padding: 5%;
+    display: inline-block;
 }
 
 .content3 {
     background-color: rgb(204, 201, 201);
-  
-    padding: 10%;
+    padding: 5%;
+    display: inline-block;
 }
 
 /* signup */ 
@@ -161,6 +164,7 @@ body {
 .center {text-align: center;}
 .left {text-align: left;}
 .margin-b {margin-bottom: 2%;}
+.margin-t {margin-top: 3%;}
 
 .bg-light {
     color: rgb(34, 34, 34);
@@ -270,6 +274,22 @@ body {
     display: none;
   }
     
+  /* SCROLL ANIMATION */
+  .aos {
+    position: relative;
+    top: 20px;
+    opacity: 0;
+    transition: 0.5s ease-out;
+    
+}
+
+.aos.active {
+    top: 0;
+    opacity: 1;
+    transform: translateY(-20px);
+    transition: .8s ease-in;
+}
+
 /* @media queries */
 
 @media(max-width:768px) {
