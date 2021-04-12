@@ -31,8 +31,7 @@ body {
 }
 
 .nav {
-    background-color: rgba(208, 210, 211, 0.863); /* rgb(223, 221, 221);*/
-    grid-area: nav;
+    background-color: rgba(208, 210, 211, 0.863);
     padding: 1%;
     display: flex;
     justify-content: center;
@@ -266,10 +265,15 @@ body {
   .button-solid:hover {
       background-color: rgb(79, 79, 80);
   }
+
+  .mobile-display {
+    display: none;
+  }
     
 /* @media queries */
 
 @media(max-width:768px) {
+    
     .email-signup input {
       width: 100%;
       max-width: 100%;
@@ -277,5 +281,63 @@ body {
 
     .mobile-center {
         text-align: center;
+    }
+
+    #home .mobile-hide {
+        display: none;
+      }
+  
+      #home .mobile-display, .nav {
+        display: block;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        position: fixed;
+        z-index: 2;
+        padding-bottom: 5%;
+        border-top: none;
+        height: auto;
+        overflow-x: hidden;
+        border-bottom: 1px solid rgb(255, 201, 185);
+        cursor: pointer;
+    }
+
+    #home .nav a {
+        border-top: none;
+    }
+
+    .title {
+        font-family: 'Sacramento', cursive;
+        font-size: 250%;
+    }
+
+    .main {
+        padding-top: 50%;
+        background-position: top;
+        background-size: cover;
+    }
+
+    .content0 {
+        padding: 15% 5% 15% 5%;
+    }
+
+    .bg-light {
+        padding: 10%;
+    }
+
+    .bg-light h2 {
+        font-size: 150%;
+    }
+
+    .signup, .contact, .about {
+        padding: 15%;
+    }
+
+    .reviews {
+        padding: 10%;
+    }
+
+    .bg-fitness, .bg-nutrition, .bg-about {
+        padding: 30% 20%;
     }
   }
