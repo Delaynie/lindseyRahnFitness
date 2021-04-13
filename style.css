@@ -88,31 +88,40 @@ body {
     padding: 5%;
     margin-top: 3%
 }
-/* offerings (3 options) */
 
-.content1 {
-    background-color: rgb(204, 201, 201);
-    padding: 5%;
-    display: inline-block;
-}
 
-.content2 {
-    background-color: rgb(204, 201, 201);
-    padding: 5%;
-    display: inline-block;
-}
-
-.content3 {
-    background-color: rgb(204, 201, 201);
-    padding: 5%;
-    display: inline-block;
-}
-
-/* signup */ 
+/* signup 
 
 .signup {
     grid-area: signup;
     padding: 10%;
+}
+*/
+/* options CSS */
+.no-bullets { list-style:none; }
+  
+/* Used to remove dot-points from a list */
+.card {
+  padding: 2rem;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2), 0 10px 10px -5px rgba(0, 0, 0, 0.2);
+}
+
+.price {
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+.pricing-name {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: rgb(120,120,125);
+}
+
+.bg-sales {
+    background-color: rgba(22, 81, 121, 0.63);
+    padding: 5%;
 }
 
 /* reviews */
@@ -158,8 +167,9 @@ body {
     .inline a:hover {
         color: white;
     }
-/* utility classes */
 
+/* utility classes */
+.padded-1 {  padding: 2rem;   }
 .right {text-align: right;}
 .center {text-align: center;}
 .left {text-align: left;}
@@ -263,7 +273,7 @@ body {
     border-radius: 0;
     font-size: 1rem;
   }
-  form .button {
+  form .button-solid {
     width:100%;
   }
   .button-solid:hover {
@@ -339,6 +349,10 @@ body {
 
     .content0 {
         padding: 15% 5% 15% 5%;
+    }
+
+    .bg-sales {
+        padding: 10%;
     }
 
     .bg-light {
