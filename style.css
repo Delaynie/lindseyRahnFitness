@@ -48,7 +48,6 @@ body {
         text-emphasis: none;
         text-decoration: none;
         color: black;
-        border-top: 1px solid black;
     }
         .nav a:hover {
             color: rgb(190, 58, 65);
@@ -106,11 +105,11 @@ body {
   background-color: white;
   border-radius: 5px;
   box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2), 0 10px 10px -5px rgba(0, 0, 0, 0.2);
-  height: 40vh;
+  height: auto;
   width: auto;
 }
 
-.card:hover {
+.card:hover, .card:focus {
     transform: translateY(-30px);
     transition: 0.8s ease-in-out;
     box-shadow: 0 10px 50px -5px rgba(0, 0, 0, 0.2), 0 30px 20px -5px rgba(0, 0, 0, 0.2);
@@ -165,10 +164,11 @@ body {
     color: rgb(232, 234, 235);
     background-color: rgb(47, 93, 107);
     border-top: 2px solid rgb(24, 43, 24);
+    height: auto;
 }
 
 .inline a {
-    padding: 2%;
+    height: auto;
     text-emphasis: none;
     text-decoration: none;
     color: rgb(245, 199, 214);
@@ -318,6 +318,20 @@ body {
       max-width: 100%;
     }
 
+    .email-signup .button-solid {
+        padding: 0.8em;
+        border-radius: 0;
+        font-size: 1rem;
+      }
+      form .button-solid {
+        width:100%;
+      }
+
+    .card {
+        padding: 1rem;
+        height: auto;
+    }
+
     .mobile-center {
         text-align: center;
     }
@@ -383,4 +397,7 @@ body {
     .bg-fitness, .bg-nutrition, .bg-about {
         padding: 30% 20%;
     }
+
+    /* mobile footer */
+    
   }
