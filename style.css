@@ -21,7 +21,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-bottom: 1px solid rgb(255, 201, 185);
+    border-bottom: 1px solid rgb(94, 150, 182);
     position: fixed;
     top: 0;
     width: 100%;
@@ -41,8 +41,9 @@ body {
         .header {
             text-align: left;
             padding: 1%;
-            font-family: 'Sacramento', cursive;
-            font-size: 300%;
+            font-family: roboto;
+            font-size: 200%;
+            font-weight: lighter;
             display: flex;
             justify-content: left;
             align-items: left;
@@ -297,6 +298,10 @@ body {
     transition: .8s ease-in;
 }
 
+.mobile-footer {
+    display: hidden;
+}
+
 /* @media queries */
 
 @media(max-width:768px) {
@@ -388,6 +393,10 @@ body {
 
     .bg-fitness, .bg-nutrition, .bg-about {
         padding: 30% 20%;
+    }
+
+    .mobile-footer {
+        display: visible;
     }
 
     /* mobile footer */
