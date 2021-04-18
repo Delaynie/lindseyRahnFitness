@@ -339,7 +339,7 @@ body {
         z-index: 2;
         padding-bottom: 5%;
         border-top: none;
-        height: 25vh;
+        height: auto;
         overflow-x: hidden;
         border-bottom: 1px solid rgb(94, 150, 182);
         cursor: pointer;
@@ -362,9 +362,13 @@ body {
 
     .main {
         padding-top: 45%;
-        height: 90vh;
+        height: auto;
         background-position: center;
         background-size: cover;
+    }
+
+    .hero {
+        padding: 10%;
     }
 
     .content0 {
