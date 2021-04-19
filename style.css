@@ -308,13 +308,12 @@ body {
       max-width: 100%;
     }
 
-    .email-signup .button-solid {
+    form .button-solid {
+        width:100%;
         padding: 0.8em;
         border-radius: 0;
         font-size: 1rem;
-      }
-      form .button-solid {
-        width:100%;
+        background-color: rgb(60,60,60);
       }
 
     .card {
