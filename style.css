@@ -35,7 +35,7 @@ body {
         color: black;
     }
         .nav a:hover {
-            color: rgb(245, 112, 3);
+                color: rgb(1, 35, 114);
         }
 
         .header {
@@ -146,7 +146,8 @@ body {
 /* about */
 
 .about {
-    padding: 1%;
+    padding: 8%;
+    text-align: left;
 }
 
 /* contact */
@@ -185,6 +186,7 @@ body {
 .left {text-align: left;}
 .margin-b {margin-bottom: 2%;}
 .margin-t {margin-top: 3%;}
+ul.a { list-style-type: square;}
 
 .bg-light {
     color: rgb(34, 34, 34);
@@ -236,15 +238,14 @@ body {
   }
 
   .bg-about {
-    background-image: url('images/lindsey-no-glasses.jpg');
+    background-image: url('images/lindsey-bg-green.jpg');
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    min-width: 100%;
+    max-width: 100%;
     padding: 15%;
     min-height: 100%;
-    border-radius: 5px;
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2), 0 10px 10px -5px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
     display: flex;
     justify-content: center;
     align-content: center;
@@ -371,10 +372,6 @@ body {
         border-top: none;
     }
 
-    #home .nav a:hover {
-        color: rgb(1, 35, 114);
-    }
-
     .title {
         font-family: roboto;
         color: rgb(60,60,60);
@@ -424,8 +421,13 @@ body {
         border-right: none;
     }
 
-    .bg-fitness, .bg-nutrition, .bg-about {
+    .bg-about {
         padding: 30% 20%;
+    }
+
+    .about {
+        text-align: center;
+        padding: 15%;
     }
 
     .footer a {
