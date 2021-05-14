@@ -317,8 +317,48 @@ body {
 }
 
 /* @media queries */
+@media(max-width:1000px) {
 
-@media(max-width:768px) {
+    #home .mobile-hide {
+        display: none;
+      }
+
+      .mobile-display, .nav {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        display: block;
+        position: fixed;
+        z-index: 2;
+        padding-bottom: 5%;
+        border-top: none;
+        height: auto;
+        overflow-x: hidden;
+        border-bottom: 1px solid rgb(29, 44, 53);
+        cursor: pointer;
+        background-color: rgba(71, 130, 160, 0.863);
+    }
+
+    .title {
+        color: rgb(236, 236, 236);
+        letter-spacing: .1em;
+        font-size: 170%;
+    }
+
+    .main {
+        padding-top: 40%;
+        background-position: bottom;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 70vh;
+    }
+
+    .hero {
+        padding: 10% 8% 20% 8%;
+        font-size: 180%;
+    }
+}
+@media(max-width:765px) {
     
     .email-signup input {
       width: 100%;
@@ -346,8 +386,7 @@ body {
         display: none;
       }
   
-      #home .mobile-display, .nav {
-        /* display: block and position: fixed; */
+      #home .mobile-display, nav {
         padding: 0;
         margin: 0;
         width: 100%;
@@ -361,7 +400,7 @@ body {
         border-bottom: 1px solid rgb(29, 44, 53);
         cursor: pointer;
         background-color: rgb(94, 150, 182);
-        
+        background-color: rgba(71, 130, 160, 0.863);
     }
 
     #home .nav a {
