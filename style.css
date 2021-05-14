@@ -400,7 +400,7 @@ body {
         border-bottom: 1px solid rgb(29, 44, 53);
         cursor: pointer;
         background-color: rgb(94, 150, 182);
-        background-color: rgba(71, 130, 160, 0.863);
+       /* background-color: rgba(71, 130, 160, 0.863);*/
     }
 
     #home .nav a {
