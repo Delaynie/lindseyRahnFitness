@@ -123,7 +123,7 @@ body {
     width: auto;
     display: inline-block;
     background-color: white;
-    color: rgb(60,60,60);
+    color: rgb(107,105,105);
     border: 2px solid rgb(107,105,105);
     border-radius: 5px;
     text-decoration: none;
@@ -161,16 +161,6 @@ body {
     border-top: 2px solid rgb(24, 43, 24);
     height: auto;
 }
-
-.inline a {
-    text-emphasis: none;
-    text-decoration: none;
-    color: white;
-    font-size: 2rem;
-}
-    .inline a:hover {
-        color: rgb(235, 232, 232);
-    }
 
 /* utility classes */
 .padded-1 {  padding: 2rem;   }
@@ -265,14 +255,6 @@ body {
     margin-bottom: 1em;
   }
   
-  input[type="submit"] {
-    width: auto;
-    display: block;
-    background-color: rgb(92, 138, 92);
-    color: rgb(223, 221, 221);
-    cursor: pointer;
-  }
-  
   form [class*=col-] {
     padding: 5px;
   }
@@ -284,16 +266,21 @@ body {
     margin-top:1rem;
   }
   
-  .email-signup .button-solid {
-    padding: 0.8em;
-    border-radius: 0;
-    font-size: 1rem;
-  }
   form .button-solid {
-    width:100%;
+    width: 100%;
+    height: auto;
+    padding: 4%;
+    display: inline-block;
+    background-color: rgb(92, 138, 92);
+    color: rgb(223, 221, 221);
+    cursor: pointer;
+    box-shadow: none;
+    border: 2px solid rgb(192, 192, 192);
+    border-radius: 5px;
+    text-transform: uppercase;
   }
   .button-solid:hover {
-      background-color: rgb(79, 79, 80);
+      background-color: rgb(92, 170, 92);
   }
 
   .mobile-display {
@@ -370,7 +357,6 @@ body {
         padding: 5%;
         border-radius: 5px;
         font-size: 1rem;
-        background-color: rgb(60,60,60);
       }
 
     .card {
@@ -412,10 +398,6 @@ body {
     .about {
         text-align: center;
         padding: 15%;
-    }
-
-    .inline a {
-        font-size: 1.2rem;
     }
 
   }
