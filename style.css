@@ -303,6 +303,9 @@ body {
     transition: .8s ease-in;
 }
 
+.scroll-top {
+    scroll-margin-top: 1rem;
+}
 /* @media queries */
 
 @media(max-width:770px) {
