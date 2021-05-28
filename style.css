@@ -310,30 +310,84 @@ body {
 
 @media(max-width:770px) {
 
-    .scroll-padding {
-        padding-bottom: 80px;
-    }
-
     #home .mobile-hide {
         display: none;
       }
 
-      .mobile-display, .nav {
+      .nav-mobile {
         padding: 0;
         margin: 0;
         width: 100%;
         display: block;
-        position: fixed;
-        z-index: 2;
-        padding-bottom: 5%;
+        padding-bottom: 3%;
         border-top: none;
         height: auto;
-        overflow-x: hidden;
         border-bottom: 1px solid rgb(29, 44, 53);
-        cursor: pointer;
-        /*background-color: rgba(71, 130, 160, 0.863);*/
         background-color: rgb(94, 150, 182);
+        z-index: 2;
     }
+
+    .mobile-display {
+        display: inline-block;
+    }
+
+       /* DROPDOWN MENU FOR MOBILE */
+
+/* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 2; /* Stay on top */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 80px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    top: 0;
+    right: 0;
+    background-color: rgb(94, 150, 182);
+    cursor: pointer;
+    text-align: center;
+  }
+
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  .dropbtn {
+    position: fixed;
+    top: 15%;
+    right: 2%;
+    font-size: 20px;
+    display: inline-block;
+    padding: 1%;
+    background: rgb(94, 150, 182);
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    z-index: 2;
+    border: none;
+    border-radius: 5px;
+}
+  
+  /* The navigation menu links */
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: rgb(221, 220, 220);
+  }
+
+/* ----- End of Dropdown Menu -----*/
 
     .title {
         color: rgb(236, 236, 236);
@@ -416,26 +470,8 @@ body {
       }
 
       #home .mobile-display, nav {
-        padding: 0;
-        margin: 0;
-        width: 100%;
         display: block;
-        position: fixed;
-        z-index: 2;
-        padding-bottom: 5%;
-        border-top: none;
-        height: auto;
-        overflow-x: hidden;
-        border-bottom: 1px solid rgb(29, 44, 53);
-        cursor: pointer;
-        background-color: rgb(94, 150, 182);
-       /* background-color: rgba(71, 130, 160, 0.863);*/
-    }
-
-    #home .nav a {
-        border-top: none;
-        color: rgb(236, 236, 236);
-    }
+      }
 
     .title {
         color: rgb(236, 236, 236);
