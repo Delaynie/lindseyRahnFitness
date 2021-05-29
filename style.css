@@ -360,11 +360,11 @@ body {
   
   .dropbtn {
     position: fixed;
-    top: 18%;
-    right: 2%;
-    font-size: 20px;
+    top: 16%;
+    right: 3%;
+    font-size: 30px;
     display: inline-block;
-    padding: 1.2% 2.4% 1.5% 2.4%;
+    padding: 1.2% 2.4% 2% 2.4%;
     background: rgb(94, 150, 182);
     color: white;
     transform: rotate(90deg);
