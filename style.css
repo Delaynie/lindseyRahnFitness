@@ -364,7 +364,7 @@ body {
     right: 3%;
     font-size: 30px;
     display: inline-block;
-    padding: 1.2% 2.4% 2% 2.4%;
+    padding: 1.2% 2.4% 1.2% 2.4%;
     background: rgb(94, 150, 182);
     color: white;
     transform: rotate(90deg);
@@ -372,7 +372,7 @@ body {
     cursor: pointer;
     z-index: 2;
     border: none;
-    box-shadow:0 5px 15px -5px rgba(0, 0, 0, 0.4);
+    box-shadow:5px 5px 15px -5px rgba(0, 0, 0, .4);
     border-radius: 5px;
 }
   
