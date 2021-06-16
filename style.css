@@ -182,6 +182,7 @@ body {
 /* utility classes */
 .padded-1 {  padding: 2rem;   }
 .padding-b {padding-bottom: 2%;}
+.bottom-p {padding-bottom: 5%;}
 .padding-t {padding-top: 2%;}
 .right {text-align: right;}
 .center {text-align: center;}
@@ -259,7 +260,7 @@ body {
     color: rgb(255, 255, 255);
 }
 
-  input, textarea {
+input, textarea {
     border-style: solid;
     border: 2px solid rgb(192, 192, 192);
     padding: 0.8em;
@@ -332,7 +333,20 @@ body {
     display: none;
 }
 /* @media queries */
-
+@media(min-width:1000px) {
+    .header, .hero {
+        font-size: 250%;
+    }
+    .clickable, .clickable2 {
+        font-size: 20px;
+    }
+    .bg-light h2 {
+        font-size: 250%;
+    }
+     input, textarea {
+         font-size: 1.5rem;
+     }
+}
 @media(max-width:770px) {
 
     #home .mobile-hide {
@@ -486,6 +500,10 @@ body {
     .about {
         text-align: center;
         padding: 15%;
+    }
+
+    .bottom-p {
+        padding-bottom: 0;
     }
 
   }
