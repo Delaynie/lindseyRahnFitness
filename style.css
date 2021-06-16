@@ -137,6 +137,23 @@ body {
     border: 2px solid transparent;
     color: white;
 }
+.clickable2 {
+    margin: 1em;
+    height: auto;
+    width: auto;
+    display: inline-block;
+    background-color: rgb(107,105,105);
+    color: white;
+    border: 2px solid rgb(107,105,105);
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 1%;
+}
+.clickable2:hover {
+    background-color: rgb(80, 79, 79);
+}
 
 /* about */
 
@@ -233,6 +250,13 @@ body {
     display: flex;
     justify-content: center;
     align-content: center;
+}
+
+.link {
+    color: inherit;
+}
+.link:hover {
+    color: rgb(255, 255, 255);
 }
 
   input, textarea {
