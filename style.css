@@ -182,7 +182,9 @@ body {
 /* utility classes */
 .padded-1 {  padding: 2rem;   }
 .padding-b {padding-bottom: 2%;}
-.bottom-p {padding-bottom: 5%;}
+.bottom-p {padding-bottom: 6%;}
+.bottom-p2 {padding-bottom: 4%;}
+.bottom-p3 {padding-bottom: 0;}
 .padding-t {padding-top: 2%;}
 .right {text-align: right;}
 .center {text-align: center;}
@@ -498,7 +500,6 @@ input, textarea {
     }
 
     .about {
-        text-align: center;
         padding: 15%;
     }
 
