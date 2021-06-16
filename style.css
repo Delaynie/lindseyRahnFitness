@@ -60,6 +60,8 @@ body {
     background-position: center;
     overflow: hidden;
 }
+
+
 .hero {
     font-size: 200%;
     color: rgb(60,60,60);
@@ -114,8 +116,6 @@ body {
     padding: 5%;
     margin-bottom: 3%;
 }
-
-.no-bullets { list-style:none; }
 
 .clickable {
     margin: 1em;
