@@ -142,9 +142,9 @@ body {
     height: auto;
     width: auto;
     display: inline-block;
-    background-color: rgb(107,105,105);
+    /*background-color: rgb(107,105,105);*/
     color: white;
-    border: 2px solid rgb(107,105,105);
+    border: 2px solid rgb(216, 215, 215);
     border-radius: 5px;
     text-decoration: none;
     cursor: pointer;
@@ -202,8 +202,8 @@ body {
     font-size: 200%;
     padding-top: 5%;
     padding-bottom: 5%;
-    border-top: 1px solid rgb(24, 43, 24);
-    border-bottom: 1px solid rgb(24, 43, 24);
+    border-top: 1px solid rgb(232, 233, 233);
+    border-bottom: 1px solid rgb(232, 233, 233);
 }
 
 .bg-blue {
@@ -257,14 +257,12 @@ body {
     background-color: rgba(0, 0, 0, 0.4);
     color: white;
   }
-  
-  .bg-fitness {
-    background-image:url('/images/miguel-bruna.jpg');
-    background-position: bottom;
-  }
-  
-  .bg-nutrition {
-    background-image:url('/images/roksolana-zasiadko.jpg');
+
+  .overlay2 {
+    min-height: 12rem;
+    padding: 3rem 1rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
   }
 
   .bg-about {
