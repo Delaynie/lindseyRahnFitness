@@ -221,7 +221,6 @@ body {
     font-weight: lighter;
 }
 
-/* review css */
 .bg-image {
     background-size: cover;
     background-position: center;
@@ -230,6 +229,33 @@ body {
     border-radius: 5px;
     box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2), 0 10px 10px -5px rgba(0, 0, 0, 0.2);
   
+  }
+
+  .bg-img {
+    background-color: rgb(192, 192, 192);
+    background-size: cover;
+    background-position: center;
+  }
+  .img-test {
+    background-color: inherit;
+    background-image: url('images/lindsey-bg-green.jpg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    max-width: 100%;
+    padding: 15%;
+    min-height: 100%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .overlay {
+    min-height: 12rem;
+    padding: 3rem 1rem;
+    background-color: rgba(0, 0, 10, 0.4);
+    color: white;
   }
   
   .bg-fitness {
