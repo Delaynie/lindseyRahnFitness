@@ -359,7 +359,7 @@ input, textarea {
     display: none;
 }
 /* @media queries */
-@media(min-width:1400px) {
+@media(min-width:1000px) {
     .header, .hero {
         font-size: 250%;
     }
@@ -374,7 +374,7 @@ input, textarea {
      }
 }
 
-@media(min-width:1800px) {
+@media(min-width:2000px) {
     .main {
         height: 95vh;
     }
