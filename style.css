@@ -376,16 +376,16 @@ input, textarea {
 
 @media(min-width:1200px) {
     .main {
-        height: 80vh;
+        height: 90vh;
     }
     .header, .hero {
         font-size: 350%;
     }
 
-    .big-screen h2 {
+    .big-screen-h2 {
         font-size: 300%;
     }
-    .big-screen p {
+    .big-screen-p {
         font-size: 275%;
     }
     .clickable, .clickable2 {
