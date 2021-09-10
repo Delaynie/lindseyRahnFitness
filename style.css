@@ -361,7 +361,7 @@ input, textarea {
 /* @media queries */
 @media(min-width:1200px) {
     .header, .hero {
-        font-size: 275%;
+        font-size: 350%;
     }
     .clickable, .clickable2 {
         font-size: 25px;
