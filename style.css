@@ -379,11 +379,11 @@ input, textarea {
         font-size: 350%;
     }
 
-    .bg-light h2 {
+    .big-screen h2 {
         font-size: 300%;
     }
-    .bg-light p {
-        font-size: 275;
+    .big-screen p {
+        font-size: 275%;
     }
     .clickable, .clickable2 {
         font-size: 25px;
