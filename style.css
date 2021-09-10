@@ -375,6 +375,9 @@ input, textarea {
 }
 
 @media(min-width:1200px) {
+    .main {
+        height: 80vh;
+    }
     .header, .hero {
         font-size: 350%;
     }
