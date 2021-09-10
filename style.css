@@ -359,6 +359,21 @@ input, textarea {
     display: none;
 }
 /* @media queries */
+@media(min-width:1200px) {
+    .header, .hero {
+        font-size: 275%;
+    }
+    .clickable, .clickable2 {
+        font-size: 25px;
+    }
+    .bg-light h2 {
+        font-size: 275%;
+    }
+     input, textarea {
+         font-size: 1.8rem;
+     }
+}
+
 @media(min-width:1000px) {
     .header, .hero {
         font-size: 250%;
