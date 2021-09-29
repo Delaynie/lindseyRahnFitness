@@ -359,7 +359,9 @@ input, textarea {
     display: none;
 }
 /* @media queries */
-@media(min-width:1200px) {
+
+/* baseline for min-width queries (everything bigger from here!) */
+@media(min-width:1100px) {
     .header, .hero {
         font-size: 250%;
     }
@@ -374,6 +376,7 @@ input, textarea {
      }
 }
 
+/* Max min-width media, shouldn't need anything bigger from here */
 @media(min-width:2000px) {
     .main {
         height: 95vh;
