@@ -234,13 +234,22 @@
         </form>
       </div>
     </section>
-<!--
-    Email: <input type="text" name="name"><br>
-		  Name: <input type="text" name="email"><br>
-		  Subject: <input type="text" name="subject"><br>
-		  Message: <textarea name="message" cols="40" rows="5"></textarea>
-		  <input type="submit" value="Send Message">
-		</form>-->
+
+    <!-- testing new form style -->
+    <form id="fs-frm" name="registration-form" accept-charset="utf-8" action="https://formspree.io/f/xleavdzj" method="post">
+      <fieldset id="fs-frm-inputs">
+        <label for="full-name">Full Name</label>
+        <input type="text" name="name" id="full-name" placeholder="Your Name" required="">
+        <label for="email-address">Email Address</label>
+        <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required="">
+        <label for="message">Your Message:</label>
+        <textarea rows="5" name="message" id="message" placeholder="Your Message"></textarea>
+        <input type="hidden" name="_subject" id="email-subject" value="Registration Form Submission">
+      </fieldset>
+      <input type="submit" value="Register" class="button-solid">
+    </form>
+
+  
 
         <!-- Desktop footer -->
         <footer class="grid footer">
