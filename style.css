@@ -449,12 +449,16 @@ input, textarea {
     cursor: pointer;
     text-align: center;
   }
+
+  /* leaving this here for now in case we change the color for 
+        the background to make the logo work ...
+
   .sidenav img {
       display: block;
       margin-right: auto;
       margin-left: auto;
       max-height: 20vh;
-  }
+  } */
 
   .sidenav .closebtn {
     position: absolute;
