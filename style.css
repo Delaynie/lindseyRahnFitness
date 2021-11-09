@@ -409,7 +409,7 @@ input, textarea {
 }
 
 
-@media(max-width:770px) {
+@media(max-width:800px /*originally 770px*/) {
 
     #home .mobile-hide {
         display: none;
@@ -448,6 +448,11 @@ input, textarea {
     background-color: rgb(94, 150, 182);
     cursor: pointer;
     text-align: center;
+  }
+  .sidenav img {
+      margin-right: auto;
+      margin-left: auto;
+      max-height: 20vh;
   }
 
   .sidenav .closebtn {
@@ -601,6 +606,6 @@ input, textarea {
         padding: 8% 5% 15% 5%;
         font-size: 120%;
     }
-    
+
 
 }
