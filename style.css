@@ -429,8 +429,8 @@ input, textarea {
     }
     .nav-mobile img {
         padding: 2%;
-        margin-left: 2%;
-        margin-right: 2%;
+        margin-left: 5%;
+        margin-right: 5%;
         display: inline-block;
         max-height: 20vh;
         background-color: rgb(47, 93, 107);
