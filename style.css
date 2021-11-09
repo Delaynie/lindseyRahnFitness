@@ -545,6 +545,8 @@ input, textarea {
 
     .mobile-center {
         text-align: center;
+        display: flex;
+        justify-content: center;
     }
 
     .content0 {
@@ -583,6 +585,7 @@ input, textarea {
     }
 
     img {
+        max-width: 100%;
         max-height: 40vh;
     }
 
