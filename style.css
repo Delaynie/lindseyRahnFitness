@@ -298,7 +298,7 @@ input, textarea {
     padding: 0.8em;
     display: block;
     width: 100%;
-    font-size: 1rem;
+    font-size: .5rem;
     border-radius: 5px;
   }
   
@@ -541,7 +541,7 @@ input, textarea {
       }
 
       input, textarea {
-        border: 2px solid rgb(1, 25, 114);
+          border: none;
       }
       input:focus,
   textarea:focus {
