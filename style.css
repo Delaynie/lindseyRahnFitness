@@ -417,9 +417,10 @@ input, textarea {
 
       .nav-mobile {
         padding: 0;
-        margin: 0;
+        margin: 0 auto;
         width: 100%;
-        display: block;
+        display: flex;
+        justify-content: center;
         padding-bottom: 3%;
         border-top: none;
         height: auto;
@@ -428,12 +429,8 @@ input, textarea {
         z-index: 2;
     }
     .nav-mobile img {
-        padding: 2%;
-        margin-left: 2%;
-        margin-right: 2%;
-        position: center;
+        max-width: 100%;
         max-height: 20vh;
-        background-color: rgb(47, 93, 107);
     }
 
     .mobile-display {
