@@ -534,8 +534,8 @@ input, textarea {
         width:100%;
         padding: 10%;
         font-size: 1.2rem;
-        background-color: rgb(1, 35, 114);
-        border: none;
+        background-color: rgb(2, 70, 8);
+        border: 1px solid rgb(192, 192, 192);
       }
       form .button-solid:hover {
         background-color: rgb(1, 51, 165);
