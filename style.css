@@ -542,11 +542,12 @@ input, textarea {
 
       input, textarea {
           border: none;
+          font-size: 1rem;
       }
       input:focus,
   textarea:focus {
     outline: none;
-    border: 2px solid rgb(1, 35, 114);
+    border: 1px solid rgb(1, 51, 165);
   }
 
     .card {
