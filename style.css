@@ -450,10 +450,10 @@ input, textarea {
     text-align: center;
   }
   .sidenav img {
-      display: inline-block;
+      display: block;
       margin-right: auto;
       margin-left: auto;
-      max-height: 40vh;
+      max-height: 20vh;
   }
 
   .sidenav .closebtn {
