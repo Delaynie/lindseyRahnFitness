@@ -534,9 +534,13 @@ input, textarea {
      form .button-solid {
         width:100%;
         padding: 5%;
-        border-radius: 5px;
-        font-size: 1rem;
+        border-radius: .5px;
+        font-size: 1.5rem;
         background-color: rgb(1, 35, 114);
+      }
+      form .button-solid:hover {
+        background-color: rgb(1, 51, 165);
+        text-emphasis-color: white;
       }
 
     .card {
