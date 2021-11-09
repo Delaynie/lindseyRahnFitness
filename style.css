@@ -538,7 +538,7 @@ input, textarea {
         border: 1px solid rgb(192, 192, 192);
       }
       form .button-solid:hover {
-        background-color: rgb(1, 51, 165);
+        background-color: rgb(20, 99, 20);
       }
 
       input, textarea {
@@ -548,7 +548,7 @@ input, textarea {
       input:focus,
   textarea:focus {
     outline: none;
-    border: 1px solid rgb(1, 51, 165);
+    border: 1px solid rgb(2, 70, 8);
   }
 
     .card {
