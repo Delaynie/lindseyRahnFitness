@@ -428,8 +428,8 @@ input, textarea {
         z-index: 2;
     }
     .nav-mobile img {
-        margin-right: auto;
-        margin-left: auto;
+        padding: 2%;
+        margin-left: 0.2%;
         display: inline-block;
         max-height: 20vh;
         background-color: rgb(47, 93, 107);
