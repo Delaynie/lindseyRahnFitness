@@ -305,7 +305,7 @@ input, textarea {
   input:focus,
   textarea:focus {
     outline: none;
-    border: 2px solid rgb(255, 201, 185);
+    border: 2px solid rgb(92, 138, 92);
   }
   
   textarea {
@@ -541,8 +541,13 @@ input, textarea {
       }
 
       input, textarea {
-        border: 1px solid rgb(1, 25, 114);
+        border: 2px solid rgb(1, 25, 114);
       }
+      input:focus,
+  textarea:focus {
+    outline: none;
+    border: 2px solid rgb(1, 35, 114);
+  }
 
     .card {
         padding: 1rem;
