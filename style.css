@@ -439,13 +439,14 @@ input, textarea {
      }
      form .button-solid {
     padding: 4%;
-    background-color: rgb(92, 138, 92);
+     }
+    /*background-color: rgb(92, 138, 92);
     color: rgb(223, 221, 221);
     border: 2px solid rgb(192, 192, 192);
   }
   .button-solid:hover {
       background-color: rgb(92, 170, 92);
-  }
+  }*/
 
      nav a {
          font-size: 100%;
