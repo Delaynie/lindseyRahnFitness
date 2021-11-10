@@ -66,7 +66,7 @@ body {
 }
 
 
-.hero {
+.main h2 {
     font-size: 200%;
     color: rgb(60,60,60);
     text-align: center;
@@ -369,39 +369,136 @@ input, textarea {
 }
 /* @media queries */
 
+/* List of texts that need to be larger for anything above 1400px wide 
+    class=
+    nav (in the header)
+    hero (middle of pic)
+    bg-light (might not need this one)
+    big-screen-h2 (h2s)
+    big-screen-p (Ps)
+    pricing-name (plan name)
+    clickable (click to learn more buttons)
+    no-bullets (list items)
+    clickable-2 (contact for more info)
+    overlay (text over the pictures)
+    big-contact (bigger text for contact side... will need more customization)
+    big-footer (bigger text for footer)
+  */
+
 /* baseline for min-width queries (everything bigger from here!) */
-@media(min-width:1100px) {
-    .header, .hero {
-        font-size: 250%;
+@media(min-width:766px) {
+
+    .header {
+        font-weight: 300;
     }
-    .clickable, .clickable2 {
-        font-size: 20px;
+    .main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 80vh;
+    }
+    .main h2 {
+        position: center;
+        font-size: 200%;
+    }
+}
+
+@media(min-width:1020px) {
+    .header {
+        font-size: 200%;
+    }
+    .main {
+        background-position: bottom;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 65vh;
+    }
+    .main h2 {
+        position: center;
+        font-size: 185%;
+    }
+    .clickable {
+        font-size: 90%;
+    }
+    .clickable2 {
+        font-size: 100%;
     }
     .bg-light h2 {
         font-size: 250%;
     }
      input, textarea {
-         font-size: 1.5rem;
+         font-size: 1rem;
      }
+     form .button-solid {
+         padding: 4%;
+     }
+
+     nav a {
+         font-size: 100%;
+     }
+    
+    .big-screen-h2 {
+        font-size: 200%;
+    }
+    .big-screen-p {
+        font-size: 90%;
+        line-height: 1.8em;
+    }
+    .pricing-name {
+        font-size: 90%;
+    }
+
+    .no-bullets {
+        font-size: 90%;
+    }
+
+    .overlay h2, .overlay2 h2 {
+        font-size: 190%;
+    }
+
+    .overlay ul, .overlay2 ul {
+        font-size: 95%;
+    }
+
+    .overlay p, .overlay2 p {
+        font-size: 100%;
+    }
+    
+    .big-contact h2 {
+        font-size: 180%;
+    }
+    .big-contact p {
+        font-size: 100%;
+    }
+
 }
 
 /* Max min-width media, shouldn't need anything bigger from here */
-@media(min-width:2000px) {
+@media(min-width:1400px) {
     .main {
-        height: 95vh;
+        background-position: bottom;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 75vh;
     }
-    .header, .hero {
-        font-size: 350%;
+    .main h2 {
+        position: center;
+        font-size: 275%;
+    }
+    .header {
+        font-size: 275%;
     }
 
     .big-screen-h2 {
-        font-size: 275%;
+        font-size: 250%;
     }
     .big-screen-p {
-        font-size: 200%;
+        font-size: 160%;
     }
     .clickable, .clickable2 {
-        font-size: 25px;
+        font-size: 120%;
     }
     .bg-light h2 {
         font-size: 275%;
@@ -409,10 +506,247 @@ input, textarea {
      input, textarea {
          font-size: 1.8rem;
      }
+
+    nav a {
+        font-size: 150%;
+    }
+   
+   .pricing-name {
+       font-size: 135%;
+   }
+
+   .no-bullets {
+       font-size: 125%;
+   }
+   
+   .clickable {
+       font-size: 100%;
+   }
+
+   .overlay ul, .overlay2 ul {
+       font-size: 120%;
+   }
+
+   .overlay p, .overlay2 p {
+       font-size: 130%;
+   }
+   
+   .big-contact h2 {
+       font-size: 265%;
+   }
+   .big-contact p {
+       font-size: 175%;
+   }
+
+    .big-footer p, .big-footer a {
+        font-size: 125%;
+    }
+
+    form .button-solid {
+        padding: 4%;
+    }
 }
 
+@media(min-width:1800) {
 
-@media(max-width:800px /*originally 770px*/) {
+    .main {
+        height: 60vh;
+        max-width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .main h2 {
+        position: center;
+        font-size: 375%;
+    }
+    .header {
+        font-size: 280%;
+    }
+
+    .big-screen-h2 {
+        font-size: 300%;
+    }
+    .big-screen-p {
+        font-size: 200%;
+    }
+    .clickable, .clickable2 {
+        font-size: 30px;
+    }
+    .bg-light h2 {
+        font-size: 300%;
+    }
+     input, textarea {
+         font-size: 2.4rem;
+     }
+
+     input, textarea {
+        padding: 1em;
+        display: block;
+        width: 100%;
+        font-size: .8rem;
+      }
+      
+      textarea {
+        min-height: 9em;
+        margin-bottom: 1.2em;
+      }
+      
+      form [class*=col-] {
+        padding: 8px;
+      }
+      
+      .email-signup input {
+        width: 50%;
+        display: inline-block;
+        max-width: 300px;
+        margin-top:1.2rem;
+      }
+      
+      form .button-solid {
+        width: 100%;
+        max-height: 100%;
+        padding: 6%;
+      }
+
+    nav a {
+        font-size: 175%;
+    }
+   
+   .pricing-name {
+       font-size: 150%;
+   }
+
+   .no-bullets {
+       font-size: 140%;
+   }
+   
+   .clickable {
+       font-size: 140%;
+   }
+
+   .overlay ul, .overlay2 ul {
+       font-size: 140%;
+   }
+
+   .overlay p, .overlay2 p {
+       font-size: 160%;
+   }
+   
+   .big-contact h2 {
+       font-size: 300%;
+   }
+   .big-contact p {
+       font-size: 225%;
+   }
+
+   .clickable-2 {
+        font-size: 115%;
+    }
+    .big-footer p, .big-footer a {
+        font-size: 140%;
+    }
+
+}
+
+@media(min-width:2100px) {
+
+    .main {
+        height: 75vh;
+        max-width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .main h2 {
+        position: center;
+        font-size: 400%;
+    }
+    .header {
+        font-size: 300%;
+    }
+
+    .big-screen-h2 {
+        font-size: 350%;
+    }
+    .big-screen-p {
+        font-size: 200%;
+        line-height: 1.6em;
+    }
+    .bg-light h2 {
+        font-size: 325%;
+    }
+     input, textarea {
+         font-size: 2.8rem;
+     }
+
+     input, textarea {
+        padding: 1.2em;
+        display: block;
+        width: 100%;
+        font-size: 180%;
+      }
+      
+      textarea {
+        min-height: 10em;
+        margin-bottom: 1.4em;
+      }
+      
+      .email-signup input {
+        width: 50%;
+        display: inline-block;
+        max-width: 350px;
+        margin-top:1.4rem;
+      }
+      
+      form .button-solid {
+        width: 100%;
+        max-height: 100%;
+        padding: 4%;
+        font-size: 200%;
+      }
+
+    nav a {
+        font-size: 180%;
+    }
+   
+   .pricing-name {
+       font-size: 165%;
+   }
+
+   .no-bullets {
+       font-size: 150%;
+   }
+   
+   .clickable {
+       font-size: 130%;
+   }
+
+   .overlay ul, .overlay2 ul {
+       font-size: 160%;
+   }
+
+   .overlay p, .overlay2 p {
+       font-size: 180%;
+   }
+   
+   .big-contact h2 {
+       font-size: 350%;
+   }
+   .big-contact p {
+       font-size: 250%;
+   }
+
+   .clickable-2 {
+        font-size: 125%;
+    }
+    .big-footer p, .big-footer a {
+        font-size: 150%;
+    }
+
+}
+
+@media(max-width:768px) {
 
     #home .mobile-hide {
         display: none;
@@ -424,16 +758,14 @@ input, textarea {
         width: 100%;
         display: flex;
         justify-content: center;
-        padding-bottom: 3%;
-        border-top: none;
-        height: auto;
+        border-top: none; 
         border-bottom: 1px solid rgb(29, 44, 53);
         background-color: rgb(47, 93, 107); /* rgb(94, 150, 182);*/
         z-index: 2;
     }
     .nav-mobile img {
         max-width: 100%;
-        max-height: 25vh;
+        max-height: 20vh;
     }
 
     .mobile-display {
@@ -517,16 +849,21 @@ input, textarea {
     }
 
     .main {
-        padding-top: 40%;
+        /*padding-top: 40%;*/
         background-position: bottom;
         background-size: cover;
         background-repeat: no-repeat;
-        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 75vh;
+
     }
 
-    .hero {
-        padding: 10% 8% 20% 8%;
-        font-size: 180%;
+    .main h2 {
+        position: center;
+        /*padding: 10% 8% 20% 8%;*/
+        font-size: 200%;
     }
     
     .email-signup input {
@@ -609,7 +946,7 @@ input, textarea {
 
   }
 
-  @media(max-width:300px) {
+  @media(max-width:320px) {
 
     #home .mobile-hide {
         display: none;
@@ -626,16 +963,19 @@ input, textarea {
     }
 
     .main {
-        padding-top: 50%;
-        background-position: bottom;
+        padding-top: 40%;
+        background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
-        height: auto;
+        height: 80vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
-    .hero {
-        padding: 8% 5% 15% 5%;
-        font-size: 120%;
+    .main h2 {
+        position: center;
+        font-size: 125%;
     }
 
 
