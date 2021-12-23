@@ -1,3 +1,10 @@
+/* notes to future self (12-22-21)
+    * debug and fix the menu items (they seem too far apart and
+        I haven't been able to pinpoint why).
+    * work on min media query between 12 or 1400px to optimize
+        font and photo sizes.
+*/
+
 /* Universal Reset */
 * {
     padding: 0;
@@ -17,8 +24,6 @@ body {
 
 .nav {
     background-color: rgba(208, 210, 211, 0.863);
-    padding-right: 5%;
-    padding-left: 5%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -28,29 +33,34 @@ body {
     height: 15vh;
     z-index: 2;
     position: fixed;
+    overflow-y: hidden;
 }
     .nav a {
-        padding: 2%;
+        display: flex;
+        justify-content: space-between;
+        padding: 3%;
+        align-items: center;
+        margin-left: auto;
         text-emphasis: none;
         text-decoration: none;
         color: black;
+        
     }
         .nav a:hover {
-                color: rgb(1, 35, 114);
+                color: rgba(22, 81, 121, 0.63);
         }
 
         .header {
-            margin: 0 auto;
-            display: flex;
+            margin-right: auto;
             justify-content: center;
             align-items: center;
             font-family: roboto;
             font-weight: lighter;
-            font-size: 100%;
+            font-size: 20px;
             letter-spacing: .1em;
         }
-        .header img {
-            max-width: 100%;
+        .nav img {
+            width: auto;
             max-height: 10vh;
         }
 
@@ -156,14 +166,21 @@ body {
     padding: 1%;
 }
 .clickable2:hover {
-    background-color: rgb(80, 79, 79);
+    background-color: rgba(80, 79, 79, 0.60);
 }
 
 /* about */
 
 .about {
-    padding: 8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5%;
+}
+
+.about-p {
     text-align: left;
+    padding-right: 5%;
 }
 
 /* contact */
@@ -195,6 +212,7 @@ body {
 .left {text-align: left;}
 .margin-b {margin-bottom: 2%;}
 .margin-t {margin-top: 3%;}
+.line-height { line-height: normal;}
 
 .bg-light {
     color: rgb(34, 34, 34);
@@ -248,7 +266,7 @@ body {
     background-repeat: no-repeat;
     max-width: 100%;
     padding: 25%;
-    min-height: 100%;
+    height: 100%;
     border-radius: 10px;
     display: flex;
     justify-content: center;
@@ -276,7 +294,7 @@ body {
     background-repeat: no-repeat;
     max-width: 100%;
     padding: 15%;
-    min-height: 100%;
+    max-height: 40vh;
     border-radius: 10px;
     display: flex;
     justify-content: center;
@@ -285,9 +303,18 @@ body {
 
 img {
     margin-left: auto;
-    margin-right: auto;
-    max-height: 50vh;
+    margin: auto;
+    width: auto;
   }
+
+  .img-div img {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    flex: 1 1 auto;
+    width: auto;
+    max-height: 30vh;
+}
 
 .link {
     color: inherit;
@@ -461,7 +488,7 @@ input, textarea {
     }
 
     .overlay h2, .overlay2 h2 {
-        font-size: 190%;
+        font-size: 12px;
     }
 
     .overlay ul, .overlay2 ul {
@@ -554,108 +581,6 @@ input, textarea {
     }
 }
 
-@media(min-width:1800) {
-
-    .main {
-        height: 60vh;
-        max-width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .main h2 {
-        position: center;
-        font-size: 375%;
-    }
-    .header {
-        font-size: 280%;
-    }
-
-    .big-screen-h2 {
-        font-size: 300%;
-    }
-    .big-screen-p {
-        font-size: 200%;
-    }
-    .clickable, .clickable2 {
-        font-size: 30px;
-    }
-    .bg-light h2 {
-        font-size: 300%;
-    }
-     input, textarea {
-         font-size: 2.4rem;
-     }
-
-     input, textarea {
-        padding: 1em;
-        display: block;
-        width: 100%;
-        font-size: .8rem;
-      }
-      
-      textarea {
-        min-height: 9em;
-        margin-bottom: 1.2em;
-      }
-      
-      form [class*=col-] {
-        padding: 8px;
-      }
-      
-      .email-signup input {
-        width: 50%;
-        display: inline-block;
-        max-width: 300px;
-        margin-top:1.2rem;
-      }
-      
-      form .button-solid {
-        width: 100%;
-        max-height: 100%;
-        padding: 6%;
-      }
-
-    nav a {
-        font-size: 175%;
-    }
-   
-   .pricing-name {
-       font-size: 150%;
-   }
-
-   .no-bullets {
-       font-size: 140%;
-   }
-   
-   .clickable {
-       font-size: 140%;
-   }
-
-   .overlay ul, .overlay2 ul {
-       font-size: 140%;
-   }
-
-   .overlay p, .overlay2 p {
-       font-size: 160%;
-   }
-   
-   .big-contact h2 {
-       font-size: 300%;
-   }
-   .big-contact p {
-       font-size: 225%;
-   }
-
-   .clickable-2 {
-        font-size: 115%;
-    }
-    .big-footer p, .big-footer a {
-        font-size: 140%;
-    }
-
-}
-
 @media(min-width:2100px) {
 
     .main {
@@ -667,91 +592,124 @@ input, textarea {
     }
     .main h2 {
         position: center;
-        font-size: 400%;
+        font-size: 50px;
     }
     .header {
         font-size: 300%;
     }
 
     .big-screen-h2 {
-        font-size: 350%;
+        font-size: 38px;
     }
     .big-screen-p {
-        font-size: 200%;
-        line-height: 1.6em;
+        font-size: 22px;
+        line-height: 1.8em;
+        letter-spacing: .06em;
+    }
+    .big-about-p {
+        padding: 5%;
+        padding-right: 8%;
     }
     .bg-light h2 {
-        font-size: 325%;
+        font-size: 36px;
     }
      input, textarea {
-         font-size: 2.8rem;
+         font-size: 25px;
      }
 
      input, textarea {
         padding: 1.2em;
         display: block;
         width: 100%;
-        font-size: 180%;
+        font-size: 25px;
       }
       
       textarea {
-        min-height: 10em;
+        min-height: 8em;
         margin-bottom: 1.4em;
       }
       
       .email-signup input {
-        width: 50%;
+        width: 40%;
         display: inline-block;
-        max-width: 350px;
-        margin-top:1.4rem;
+        max-width: 300px;
+        margin-top: 1rem;
       }
       
       form .button-solid {
         width: 100%;
         max-height: 100%;
-        padding: 4%;
-        font-size: 200%;
+        padding: 1.8%;
+        font-size: 25px;
       }
 
     nav a {
-        font-size: 180%;
+        font-size: 22px;
+    }
+    .header {
+        font-size: 36px;
     }
    
    .pricing-name {
-       font-size: 165%;
+       font-size: 25px;
    }
 
    .no-bullets {
-       font-size: 150%;
+       font-size: 22px;
+       line-height: 1.5em;
    }
    
    .clickable {
-       font-size: 130%;
+       font-size: 20px;
    }
 
    .overlay ul, .overlay2 ul {
-       font-size: 160%;
+       font-size: 25px;
+       line-height: 1.6em;
    }
 
    .overlay p, .overlay2 p {
-       font-size: 180%;
+       font-size: 22px;
+       line-height: 1.6em;
+       letter-spacing: .06em;
+   }
+
+   .overlay h2, .overlay2 h2 {
+       font-size: 32px;
+   }
+
+   .big-padding {
+       padding-left: 5%;
+       padding-right: 5%;
    }
    
    .big-contact h2 {
-       font-size: 350%;
+       font-size: 34px;
    }
    .big-contact p {
-       font-size: 250%;
+       font-size: 28px;
    }
 
-   .clickable-2 {
-        font-size: 125%;
+   .clickable2 {
+        font-size: 22px;
     }
     .big-footer p, .big-footer a {
-        font-size: 150%;
+        font-size: 22px;
     }
 
-}
+    .img-div img {
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        flex: 1 1 auto;
+        width: auto;
+        max-height: 30vh;
+    }
+
+    .line-height { line-height: 2.5em;}
+
+} 
+
 @media(max-width:1000px) {
     form .button-solid {
         background-color: rgb(2, 70, 8);
