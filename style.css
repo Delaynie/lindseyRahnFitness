@@ -866,16 +866,13 @@ input, textarea {
         padding: 15%;
     }
 
-    .bg-about {
-        padding: 30% 20%;
-    }
-
     .about {
-        padding: 15%;
+        padding: 15% 15% 2% 15%;
     }
 
-    .bottom-p {
-        padding-bottom: 0;
+    .bg-about {
+        padding: 40% 20%;
+        margin-bottom: 8%;
     }
 
     img {
