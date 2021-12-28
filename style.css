@@ -1,11 +1,5 @@
-/* notes to future self (12-22-21)
-    * debug and fix the menu items (they seem too far apart and
-        I haven't been able to pinpoint why).
-    * work on min media query between 12 or 1400px to optimize
-        font and photo sizes.
-*/
 
-/* Universal Reset */
+/* Reset */
 * {
     padding: 0;
     margin: 0;
@@ -20,51 +14,70 @@ body {
     color: rgb(34, 34, 34);
 }
 
-/* element styling */
-
-.nav {
-    background-color: rgba(208, 210, 211, 0.863);
+/* header styling */
+.container {
     display: flex;
     justify-content: center;
-    align-items: center;
-    border-bottom: 1px solid rgb(94, 150, 182);
+    font-family: roboto;
     top: 0;
     width: 100%;
     height: 15vh;
     z-index: 2;
     position: fixed;
     overflow-y: hidden;
+    background-color: rgba(208, 210, 211, 0.863);
+    border-bottom: 1px solid rgb(94, 150, 182);
 }
-    .nav a {
+
+.left-side {
+    display: flex;
+    margin-right: auto;
+    align-items: center;
+    flex: 1 1 auto;
+    justify-content: center;
+    align-items: center;
+    padding-left: 5%;
+}
+.left-side img {
+    width: auto;
+    max-height: 8vh;
+}
+    .left-side a {
         display: flex;
-        justify-content: space-between;
-        padding: 3%;
+        justify-content: center;
         align-items: center;
-        margin-left: auto;
+        font-weight: 300;
+        padding-right: 10%;
+        font-size: 33px;
         text-emphasis: none;
         text-decoration: none;
+        letter-spacing: .08em;
         color: black;
-        
+        margin-right: auto;
     }
-        .nav a:hover {
-                color: rgba(22, 81, 121, 0.63);
-        }
 
-        .header {
-            margin-right: auto;
-            justify-content: center;
-            align-items: center;
-            font-family: roboto;
-            font-weight: lighter;
+    .right-side {
+        display: flex;
+        margin-left: auto;
+        align-items: center;
+        flex: 1 1 auto;
+        padding-right: 5%;
+    }
+        .right-side a {
             font-size: 20px;
-            letter-spacing: .1em;
-        }
-        .nav img {
-            width: auto;
-            max-height: 10vh;
+            justify-content: space-evenly;
+            padding: 16px;
+            margin-left: auto;
+            text-emphasis: none;
+            text-decoration: none;
+            color: black;
         }
 
+        .left-side a:hover, .right-side a:hover {
+            color: rgba(22, 81, 121, 0.63);
+        }
 
+    /* hero portion styles */
 .main {
     background-color: rgb(231, 229, 229);
     padding: 20%;
@@ -75,7 +88,6 @@ body {
     overflow: hidden;
 }
 
-
 .main h2 {
     font-size: 200%;
     color: rgb(60,60,60);
@@ -83,17 +95,17 @@ body {
 }
 
 /* compelling paragraph/elevator pitch section */
-.content0 {
+.fit-content {
     background-color: rgb(204, 201, 201);
     padding: 5%;
     padding-left: 10%;
     padding-right: 10%;
     margin-top: 3%
 }
-    .content0 h2 {
+    .fit-content h2 {
         margin-top: 1%;
     }
-    .content0 p {
+    .fit-content p {
         margin-top: 2%;
     }
   
@@ -156,7 +168,6 @@ body {
     height: auto;
     width: auto;
     display: inline-block;
-    /*background-color: rgb(107,105,105);*/
     color: white;
     border: 2px solid rgb(216, 215, 215);
     border-radius: 5px;
@@ -192,12 +203,11 @@ body {
 /* social links, footer, and back to top button? */
 
 .footer {
-    padding: 5%;
+    padding: 2% 5% 2% 5%;
     font-size: 100%;
     color: rgb(232, 234, 235);
     background-color: rgb(47, 93, 107);
     border-top: 2px solid rgb(24, 43, 24);
-    height: auto;
 }
 
 /* utility classes */
@@ -258,20 +268,6 @@ body {
     background-size: cover;
     background-position: center;
   }
-  .img-test {
-    background-color: inherit;
-    background-image: url('images/lindsey-bg-green.jpg');
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    max-width: 100%;
-    padding: 25%;
-    height: 100%;
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-  }
 
   .overlay {
     min-height: 12rem;
@@ -285,6 +281,10 @@ body {
     padding: 3rem 1rem;
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
+  }
+
+  .overlay h2, .overlay2 h2 {
+    font-size: 26px;
   }
 
   .bg-about {
@@ -301,18 +301,12 @@ body {
     align-content: center;
 }
 
-img {
-    margin-left: auto;
-    margin: auto;
-    width: auto;
-  }
-
   .img-div img {
     display: flex;
     justify-content: center;
     align-self: center;
-    flex: 1 1 auto;
-    width: auto;
+    margin: auto;
+    max-width: 100%;
     max-height: 30vh;
 }
 
@@ -380,8 +374,7 @@ input, textarea {
     position: relative;
     top: 20px;
     opacity: 0;
-    transition: 0.5s ease-out;
-    
+    transition: 0.5s ease-out; 
 }
 
 .aos.active {
@@ -396,12 +389,8 @@ input, textarea {
 }
 /* media queries */
 
-/* baseline for min-width queries (everything bigger from here!) */
+/* min-width queries (everything bigger from here!) */
 @media(min-width:766px) {
-
-    .header {
-        font-weight: 300;
-    }
     .main {
         display: flex;
         justify-content: center;
@@ -415,15 +404,13 @@ input, textarea {
 }
 
 @media(min-width:1020px) {
-    .header {
-        font-size: 200%;
-    }
+    
     .main {
         background-position: bottom;
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 65vh;
+        height: 80vh;
     }
     .main h2 {
         position: center;
@@ -436,7 +423,7 @@ input, textarea {
         font-size: 100%;
     }
     .bg-light h2 {
-        font-size: 250%;
+        font-size: 34px;
     }
      input, textarea {
          font-size: 1rem;
@@ -464,10 +451,6 @@ input, textarea {
         font-size: 90%;
     }
 
-    .overlay h2, .overlay2 h2 {
-        font-size: 12px;
-    }
-
     .overlay ul, .overlay2 ul {
         font-size: 95%;
     }
@@ -485,7 +468,8 @@ input, textarea {
 
 }
 
-@media(min-width:1400px) {
+@media(min-width:1600px) {
+
     .main {
         background-position: bottom;
         display: flex;
@@ -495,72 +479,77 @@ input, textarea {
     }
     .main h2 {
         position: center;
-        font-size: 275%;
-    }
-    .header {
-        font-size: 275%;
+        font-size: 34px;
     }
 
     .big-screen-h2 {
-        font-size: 250%;
+        font-size: 32px;
     }
     .big-screen-p {
-        font-size: 160%;
+        font-size: 22px;
     }
     .clickable, .clickable2 {
-        font-size: 120%;
+        font-size: 20px;
     }
     .bg-light h2 {
-        font-size: 275%;
+        font-size: 34px;
     }
      input, textarea {
-         font-size: 1.8rem;
+         font-size: 1.2rem;
      }
 
-    nav a {
-        font-size: 150%;
+    .right-side a {
+        font-size: 22px;
     }
    
    .pricing-name {
-       font-size: 135%;
+       font-size: 22px;
    }
 
    .no-bullets {
-       font-size: 125%;
+       font-size: 20px;
    }
    
    .clickable {
-       font-size: 100%;
+       font-size: 18px;
    }
 
    .overlay ul, .overlay2 ul {
-       font-size: 120%;
+       font-size: 20px;
    }
 
    .overlay p, .overlay2 p {
-       font-size: 130%;
+       font-size: 22px;
+   }
+
+   .overlay h2, .overlay2 h2 {
+       font-size: 32px;
    }
    
    .big-contact h2 {
-       font-size: 265%;
+       font-size: 32px;
    }
    .big-contact p {
-       font-size: 175%;
+       font-size: 22px;
    }
 
     .big-footer p, .big-footer a {
-        font-size: 125%;
+        font-size: 18px;
     }
 
     form .button-solid {
-        padding: 4%;
+        padding: 2%;
     }
 }
 
-@media(min-width:2100px) {
+@media(min-width:1975px) {
+
+    .left-side a {
+        font-size: 34px;
+    }
 
     .main {
-        height: 75vh;
+        height: 80vh;
         max-width: 100%;
         display: flex;
         justify-content: center;
@@ -568,10 +557,7 @@ input, textarea {
     }
     .main h2 {
         position: center;
-        font-size: 50px;
-    }
-    .header {
-        font-size: 300%;
+        font-size: 40px;
     }
 
     .big-screen-h2 {
@@ -584,47 +570,41 @@ input, textarea {
     }
     .big-about-p {
         padding: 5%;
-        padding-right: 8%;
+        padding-right: 10%;
+        font-size: 20px;
     }
     .bg-light h2 {
         font-size: 36px;
     }
      input, textarea {
-         font-size: 25px;
+         font-size: 20px;
      }
 
      input, textarea {
         padding: 1.2em;
         display: block;
-        width: 100%;
-        font-size: 25px;
+        width: 80%;
+        font-size: 20px;
       }
       
       textarea {
-        min-height: 8em;
+        min-height: 6em;
         margin-bottom: 1.4em;
       }
       
       .email-signup input {
-        width: 40%;
+        width: 300px;
         display: inline-block;
-        max-width: 300px;
+        max-width: 100%;
         margin-top: 1rem;
       }
       
       form .button-solid {
-        width: 100%;
+        width: 80%;
         max-height: 100%;
         padding: 1.8%;
-        font-size: 25px;
-      }
-
-    nav a {
         font-size: 22px;
-    }
-    .header {
-        font-size: 36px;
-    }
+      }
    
    .pricing-name {
        font-size: 25px;
@@ -635,12 +615,12 @@ input, textarea {
        line-height: 1.5em;
    }
    
-   .clickable {
+   .clickable, .clickable2 {
        font-size: 20px;
    }
 
    .overlay ul, .overlay2 ul {
-       font-size: 25px;
+       font-size: 20px;
        line-height: 1.6em;
    }
 
@@ -660,31 +640,25 @@ input, textarea {
    }
    
    .big-contact h2 {
-       font-size: 34px;
+       font-size: 32px;
+       padding-left: 5%;
    }
    .big-contact p {
-       font-size: 28px;
+       font-size: 24px;
+       padding-left: 5%;
    }
-
-   .clickable2 {
-        font-size: 22px;
-    }
-    .big-footer p, .big-footer a {
-        font-size: 22px;
-    }
 
     .img-div img {
         display: flex;
         justify-content: center;
         align-self: center;
-        flex: 1 1 auto;
         width: auto;
-        max-height: 30vh;
+        max-height: 25vh;
     }
 
     .line-height { line-height: 2.5em;}
 
-} 
+}
 
 /* max-width medias, everything smaller from here! */
 
@@ -710,6 +684,7 @@ input, textarea {
         width: 100%;
         display: flex;
         justify-content: center;
+        align-items: center;
         border-top: none; 
         border-bottom: 1px solid rgb(29, 44, 53);
         background-color: rgb(47, 93, 107); /* rgb(94, 150, 182);*/
@@ -843,7 +818,7 @@ input, textarea {
         justify-content: center;
     }
 
-    .content0 {
+    .fit-content {
         padding: 10% 5% 15% 5%;
     }
         .padding-b {
@@ -867,17 +842,20 @@ input, textarea {
     }
 
     .about {
-        padding: 15% 15% 2% 15%;
+        padding-top: 5%;
+        padding-right: 15%;
+        padding-left: 15%;
     }
 
     .bg-about {
-        padding: 40% 20%;
+        padding: 40%;
         margin-bottom: 8%;
     }
 
     img {
         max-width: 100%;
-        max-height: 40vh;
+        max-height: 20vh;
+        margin: auto;
     }
 
   }
