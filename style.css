@@ -394,23 +394,7 @@ input, textarea {
 .nav-mobile {
     display: none;
 }
-/* @media queries */
-
-/* List of texts that need to be larger for anything above 1400px wide 
-    class=
-    nav (in the header)
-    hero (middle of pic)
-    bg-light (might not need this one)
-    big-screen-h2 (h2s)
-    big-screen-p (Ps)
-    pricing-name (plan name)
-    clickable (click to learn more buttons)
-    no-bullets (list items)
-    clickable-2 (contact for more info)
-    overlay (text over the pictures)
-    big-contact (bigger text for contact side... will need more customization)
-    big-footer (bigger text for footer)
-  */
+/* media queries */
 
 /* baseline for min-width queries (everything bigger from here!) */
 @media(min-width:766px) {
@@ -460,13 +444,6 @@ input, textarea {
      form .button-solid {
     padding: 4%;
      }
-    /*background-color: rgb(92, 138, 92);
-    color: rgb(223, 221, 221);
-    border: 2px solid rgb(192, 192, 192);
-  }
-  .button-solid:hover {
-      background-color: rgb(92, 170, 92);
-  }*/
 
      nav a {
          font-size: 100%;
@@ -508,7 +485,6 @@ input, textarea {
 
 }
 
-/* Max min-width media, shouldn't need anything bigger from here */
 @media(min-width:1400px) {
     .main {
         background-position: bottom;
@@ -710,6 +686,8 @@ input, textarea {
 
 } 
 
+/* max-width medias, everything smaller from here! */
+
 @media(max-width:1000px) {
     form .button-solid {
         background-color: rgb(2, 70, 8);
@@ -764,16 +742,6 @@ input, textarea {
     text-align: center;
   }
 
-  /* leaving this here for now in case we change the color for 
-        the background to make the logo work ...
-
-  .sidenav img {
-      display: block;
-      margin-right: auto;
-      margin-left: auto;
-      max-height: 20vh;
-  } */
-
   .sidenav .closebtn {
     position: absolute;
     top: 0;
@@ -823,7 +791,6 @@ input, textarea {
     }
 
     .main {
-        /*padding-top: 40%;*/
         background-position: bottom;
         background-size: cover;
         background-repeat: no-repeat;
@@ -831,18 +798,16 @@ input, textarea {
         justify-content: center;
         align-items: center;
         height: 75vh;
-
     }
 
     .main h2 {
         position: center;
-        /*padding: 10% 8% 20% 8%;*/
-        font-size: 200%;
+        font-size: 2.2rem; /*at 200% prior*/
     }
     
     .email-signup input {
       width: 100%;
-      max-width: 100%;
+      max-width: 1.8rem; /*at 100% prior*/
     }
 
      form .button-solid {
