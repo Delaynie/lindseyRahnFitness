@@ -22,7 +22,7 @@ body {
     font-family: roboto;
     top: 0;
     width: 100%;
-    height: 10vh;
+    height: 15vh;
     z-index: 2;
     position: fixed;
     overflow-y: hidden;
@@ -41,16 +41,16 @@ body {
 .left-side img {
     display: flex;
     width: auto;
-    max-height: 8vh;
+    max-height: 80px;
     padding: 16px;
 }
     .left-side a {
         display: flex;
         justify-content: center;
         align-items: center;
-        font-weight: 300;
+        font-weight: lighter;
         padding-right: 10%;
-        font-size: 33px;
+        font-size: 28px;
         text-emphasis: none;
         text-decoration: none;
         letter-spacing: .08em;
@@ -409,6 +409,10 @@ input, textarea {
 }
 
 @media(min-width:1020px) {
+    .left-side a {
+        font-weight: lighter;
+        font-size: 28px;
+    }
     
     .main {
         background-position: bottom;
@@ -475,6 +479,7 @@ input, textarea {
 
 @media(min-width:1600px) {
 
+    
     .main {
         background-position: bottom;
         display: flex;
